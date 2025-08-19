@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 img {
     max-width: 100%;
 }
@@ -24,6 +28,14 @@ a {
     display: flex;
 }
 
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
 .container {
     width: 80%;
     max-width: 900px;
@@ -34,6 +46,10 @@ a {
     height: 80px;
     background-color: var(--bg-color-header);
     color: white;
+}
+
+.header img {
+    height: 40px;
 }
 
 .footer {
