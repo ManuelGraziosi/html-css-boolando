@@ -3,6 +3,18 @@
     font-weight: 600;
 }
 
+.font-size-s {
+    font-size: small;
+}
+
+.font-size-l {
+    font-size: large;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
 .py-5 {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -21,4 +33,8 @@
 .py-40 {
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.col-50 {
+    width: 50%
 }
