@@ -1,6 +1,12 @@
 :root {
+    --header-height: 80px;
+    --footer-height: 90px;
+    --label-abs-bottom: 20px;
     --bg-color-header: rgb(255, 98, 0);
     --bg-color-footer: rgb(36, 36, 36);
+    --bg-color-red: rgb(255, 0, 0);
+    --bg-color-green: rgb(13, 149, 65);
+    --bg-color-white: rgb(255, 255, 255)
 }
 
 /* RESET */
@@ -23,6 +29,10 @@ a {
     color: inherit;
 }
 
+main {
+    margin-top: var(--header-height);
+}
+
 /* COMMON */
 .flex {
     display: flex;
@@ -36,6 +46,10 @@ a {
     align-items: center;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .container {
     width: 80%;
     max-width: 900px;
@@ -43,7 +57,12 @@ a {
 }
 
 .header {
-    height: 80px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    height: var(--header-height);
     background-color: var(--bg-color-header);
     color: white;
 }
@@ -53,7 +72,58 @@ a {
 }
 
 .footer {
-    height: 100px;
+    height: var(--footer-height);
     background-color: var(--bg-color-footer);
     color: white;
+}
+
+.card {
+    position: relative;
+}
+
+.discount {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    background-color: var(--bg-color-red);
+    position: absolute;
+    left: 0;
+    bottom: var(--label-abs-bottom);
+    font-size: small;
+}
+
+.sustainability {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    background-color: var(--bg-color-green);
+    position: absolute;
+    left: 45px;
+    bottom: var(--label-abs-bottom);
+    font-size: small;
+}
+
+.prefered {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    padding: 5px;
+    background-color: var(--bg-color-white);
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.col-30 {
+    width: 30%;
+
+    /* Debug */
+    border: 1px solid black;
+    min-height: 300px;
+    margin-bottom: 20px;
+    ;
+}
+
+.col-50 {
+    width: 50%
 }
