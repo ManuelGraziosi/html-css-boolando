@@ -2,7 +2,7 @@
     --header-height: 80px;
     --footer-height: 90px;
     --label-abs-bottom: 20px;
-    --label-abs-top: 350px;
+    --label-abs-top: 70%;
     --bg-color-header: rgb(255, 98, 0);
     --bg-color-footer: rgb(36, 36, 36);
     --bg-color-red: rgb(255, 0, 0);
@@ -85,6 +85,7 @@ main {
 
 .card {
     position: relative;
+    margin-bottom: 40px;
 }
 
 .discount {
