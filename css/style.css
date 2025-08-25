@@ -2,6 +2,7 @@
     --header-height: 80px;
     --footer-height: 90px;
     --label-abs-bottom: 20px;
+    --label-abs-top: 350px;
     --bg-color-header: rgb(255, 98, 0);
     --bg-color-footer: rgb(36, 36, 36);
     --bg-color-red: rgb(255, 0, 0);
@@ -38,6 +39,11 @@ main {
     display: flex;
 }
 
+.flex-direction-column {
+    flex-direction: column;
+}
+
+
 .justify-content-space-between {
     justify-content: space-between;
 }
@@ -51,8 +57,8 @@ main {
 }
 
 .container {
-    width: 80%;
-    max-width: 900px;
+    width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -88,7 +94,8 @@ main {
     background-color: var(--bg-color-red);
     position: absolute;
     left: 0;
-    bottom: var(--label-abs-bottom);
+    top: var(--label-abs-top);
+    /* bottom: var(--label-abs-bottom); */
     font-size: small;
 }
 
@@ -99,31 +106,48 @@ main {
     background-color: var(--bg-color-green);
     position: absolute;
     left: 45px;
-    bottom: var(--label-abs-bottom);
+    top: var(--label-abs-top);
+    /* bottom: var(--label-abs-bottom); */
     font-size: small;
 }
 
 .prefered {
-    height: 15px;
-    width: 15px;
+    height: 25px;
+    width: 25px;
     display: inline-block;
-    padding: 5px;
+    padding: 0;
     background-color: var(--bg-color-white);
     position: absolute;
     right: 0;
     top: 10px;
+    text-align: center;
+    font-size: 1.4rem;
 }
 
 .col-30 {
     width: 30%;
 
     /* Debug */
-    border: 1px solid black;
+    /* border: 1px solid black;
     min-height: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
     ;
 }
 
 .col-50 {
     width: 50%
+}
+
+.image-main {
+    position: relative;
+}
+
+.image-hoover {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.card:hover .image-hoover {
+    z-index: 0;
 }

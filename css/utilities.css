@@ -3,6 +3,14 @@
     font-weight: 600;
 }
 
+.red {
+    color: red;
+}
+
+.cancelled {
+    text-decoration: line-through;
+}
+
 .font-size-s {
     font-size: small;
 }
